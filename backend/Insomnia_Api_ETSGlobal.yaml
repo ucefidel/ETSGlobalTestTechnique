@@ -1,0 +1,429 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: ETS Global
+meta:
+  id: wrk_4ebc6cc1fb244609a441bae144ece7eb
+  created: 1774682779871
+  modified: 1774682779871
+  description: ""
+collection:
+  - name: Session
+    meta:
+      id: fld_4b778681804d440d992319b040dc3207
+      created: 1774682799716
+      modified: 1774682799716
+      sortKey: -1774682799716
+      description: ""
+    children:
+      - url: http://localhost:8080/api/sessions
+        name: Add session
+        meta:
+          id: req_2b974c1cf5e44ad09288bd62c59d2bff
+          created: 1774689441811
+          modified: 1774771181448
+          isPrivate: false
+          description: ""
+          sortKey: -1774689441811
+        method: POST
+        body:
+          mimeType: application/json
+          text: >2-
+             {
+                  "language": "Franàais",
+                  "dateAt": "2026-04-16", 
+                  "hourAt": "09:00",                                                                   
+                  "location": "Casablanca",
+                  "availableSeats": 10                                                           
+              }   
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3NzA5NzYsImV4cCI6MTc3NDc3NDU3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.w5_Z5pvPIJKq2hVlwTAkVZFb6r1S5j5BgVEbEqQjzie3OsqBx_5WOrlWreNfdvb_YmvcLvM5qvB1lJCZCFlK0c10JDwkbZtaBdb6snCa-7v1ylCI-xwqb0ANFsfY32daLkFmu5rJ_TP7vDv2PUaDTxN534ENyP3WEMitv4DcdUkUAnuYCL1UIRylsA_KIfFxqC6aAiJJR3sElR_yyG_TixmD5mJEvx8ntmbyFtjdzedASz7iCgYd0afW-FnKdshFbBCWM_5PornIPEEQxprU1S1fS8eX8YCsh0GH9jfFmcWXb_5S2w4Xg5G9L3WtM5Geb8RhHRK10E826FxOOpSKQA
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sessions/
+        name: Get session
+        meta:
+          id: req_fb326ad471ba4571826265f6ff43f23a
+          created: 1774695573167
+          modified: 1774796933219
+          isPrivate: false
+          description: ""
+          sortKey: -1774695573167
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3OTY5MDMsImV4cCI6MTc3NDgwMDUwMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.O3nHnHI-gpqlsRyXO5MUf_4cSSwRtsF4VIW8qqjL4fFn2XPbpFz8hTdy2hYkZwvkfU37yc6k8xb3Ki0XmSrJbFkwbWGnidJ-prbctTmA9_jGJSI0S7c2_AhMN_Yc5V6uAGzum_6LMv0_QatGUCOzthQV7hFeZJtZZFQukgEE-cfb78hgBWkwK0Qss3NVTfDCjwAtmnhiQPTPZAbSKaFaRaY50sCZ7sGeqhaOdXbw9RvJG7we6DcUYTJCs8qzE4p8QuH6yceOzm-vJtwyIyNNmfYTB29slaVTEunpxKOwaBVMCgkEGHAwAtbWmzWeaAQ6ivcvZgHX0dJ-39fggb6JLg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sessions/69c8db87c4d43e8a9e0823d3
+        name: Get session by id
+        meta:
+          id: req_5f069f4823c34c69a03c99c0af128d68
+          created: 1774699729957
+          modified: 1774771110653
+          isPrivate: false
+          description: ""
+          sortKey: -1774692507489
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3NzA5NzYsImV4cCI6MTc3NDc3NDU3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.w5_Z5pvPIJKq2hVlwTAkVZFb6r1S5j5BgVEbEqQjzie3OsqBx_5WOrlWreNfdvb_YmvcLvM5qvB1lJCZCFlK0c10JDwkbZtaBdb6snCa-7v1ylCI-xwqb0ANFsfY32daLkFmu5rJ_TP7vDv2PUaDTxN534ENyP3WEMitv4DcdUkUAnuYCL1UIRylsA_KIfFxqC6aAiJJR3sElR_yyG_TixmD5mJEvx8ntmbyFtjdzedASz7iCgYd0afW-FnKdshFbBCWM_5PornIPEEQxprU1S1fS8eX8YCsh0GH9jfFmcWXb_5S2w4Xg5G9L3WtM5Geb8RhHRK10E826FxOOpSKQA
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sessions/69c8dbef5d88acc4810c6342
+        name: Update session
+        meta:
+          id: req_ebe6f39a96bf46bbb5881f30eba82ed2
+          created: 1774699789857
+          modified: 1774771226639
+          isPrivate: false
+          description: ""
+          sortKey: -1774699789857
+        method: PUT
+        body:
+          mimeType: application/json
+          text: >2-
+             {
+                  "language": "Anglais",
+                  "dateAt": "2026-04-05", 
+                  "hourAt": "07:00",                                                                   
+                  "location": "Lyon",
+                  "availableSeats": 1                                                           
+              }   
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3NzA5NzYsImV4cCI6MTc3NDc3NDU3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.w5_Z5pvPIJKq2hVlwTAkVZFb6r1S5j5BgVEbEqQjzie3OsqBx_5WOrlWreNfdvb_YmvcLvM5qvB1lJCZCFlK0c10JDwkbZtaBdb6snCa-7v1ylCI-xwqb0ANFsfY32daLkFmu5rJ_TP7vDv2PUaDTxN534ENyP3WEMitv4DcdUkUAnuYCL1UIRylsA_KIfFxqC6aAiJJR3sElR_yyG_TixmD5mJEvx8ntmbyFtjdzedASz7iCgYd0afW-FnKdshFbBCWM_5PornIPEEQxprU1S1fS8eX8YCsh0GH9jfFmcWXb_5S2w4Xg5G9L3WtM5Geb8RhHRK10E826FxOOpSKQA
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sessions/69c8db87c4d43e8a9e0823d3
+        name: Delete session
+        meta:
+          id: req_a8cfa7897a0e4abf9f203070514217c9
+          created: 1774702289926
+          modified: 1774771136531
+          isPrivate: false
+          description: ""
+          sortKey: -1774698038617
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: >2-
+             {
+                  "language": "Anglais",
+                  "date": "2026-04-05", 
+                  "time": "09:00",                                                                   
+                  "location": "Lyon",
+                  "availableSeats": 1                                                           
+              }   
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3NzA5NzYsImV4cCI6MTc3NDc3NDU3Niwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.w5_Z5pvPIJKq2hVlwTAkVZFb6r1S5j5BgVEbEqQjzie3OsqBx_5WOrlWreNfdvb_YmvcLvM5qvB1lJCZCFlK0c10JDwkbZtaBdb6snCa-7v1ylCI-xwqb0ANFsfY32daLkFmu5rJ_TP7vDv2PUaDTxN534ENyP3WEMitv4DcdUkUAnuYCL1UIRylsA_KIfFxqC6aAiJJR3sElR_yyG_TixmD5mJEvx8ntmbyFtjdzedASz7iCgYd0afW-FnKdshFbBCWM_5PornIPEEQxprU1S1fS8eX8YCsh0GH9jfFmcWXb_5S2w4Xg5G9L3WtM5Geb8RhHRK10E826FxOOpSKQA
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Booking
+    meta:
+      id: fld_3bbbe16d23544ef3befd61a2cd2b5b56
+      created: 1774682810165
+      modified: 1774796682557
+      sortKey: -1774682810165
+      description: ""
+    children:
+      - url: http://localhost:8080/api/bookings/me
+        name: me
+        meta:
+          id: req_52df3c7211ea4c6fb5220eb636d4dbaa
+          created: 1774696287377
+          modified: 1774796915795
+          isPrivate: false
+          description: ""
+          sortKey: -1774696287377
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3OTY5MDMsImV4cCI6MTc3NDgwMDUwMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.O3nHnHI-gpqlsRyXO5MUf_4cSSwRtsF4VIW8qqjL4fFn2XPbpFz8hTdy2hYkZwvkfU37yc6k8xb3Ki0XmSrJbFkwbWGnidJ-prbctTmA9_jGJSI0S7c2_AhMN_Yc5V6uAGzum_6LMv0_QatGUCOzthQV7hFeZJtZZFQukgEE-cfb78hgBWkwK0Qss3NVTfDCjwAtmnhiQPTPZAbSKaFaRaY50sCZ7sGeqhaOdXbw9RvJG7we6DcUYTJCs8qzE4p8QuH6yceOzm-vJtwyIyNNmfYTB29slaVTEunpxKOwaBVMCgkEGHAwAtbWmzWeaAQ6ivcvZgHX0dJ-39fggb6JLg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/bookings/book
+        name: Post reservations
+        meta:
+          id: req_adf6023ddd514278ada4b1a93f5dddb7
+          created: 1774701734403
+          modified: 1774796978037
+          isPrivate: false
+          description: ""
+          sortKey: -1774695930272
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"sessionId": "69c8dbddc76985be440dae63"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3OTY5MDMsImV4cCI6MTc3NDgwMDUwMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.O3nHnHI-gpqlsRyXO5MUf_4cSSwRtsF4VIW8qqjL4fFn2XPbpFz8hTdy2hYkZwvkfU37yc6k8xb3Ki0XmSrJbFkwbWGnidJ-prbctTmA9_jGJSI0S7c2_AhMN_Yc5V6uAGzum_6LMv0_QatGUCOzthQV7hFeZJtZZFQukgEE-cfb78hgBWkwK0Qss3NVTfDCjwAtmnhiQPTPZAbSKaFaRaY50sCZ7sGeqhaOdXbw9RvJG7we6DcUYTJCs8qzE4p8QuH6yceOzm-vJtwyIyNNmfYTB29slaVTEunpxKOwaBVMCgkEGHAwAtbWmzWeaAQ6ivcvZgHX0dJ-39fggb6JLg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/bookings/cancel/69c940b392ef788ee50236d2
+        name: Delete reservations
+        meta:
+          id: req_420a28f2b93c4ec29e570f7e31bf6e13
+          created: 1774702244348
+          modified: 1774797080217
+          isPrivate: false
+          description: ""
+          sortKey: -1774695751719.5
+        method: DELETE
+        body:
+          mimeType: application/json
+          text: ""
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3OTY5MDMsImV4cCI6MTc3NDgwMDUwMywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.O3nHnHI-gpqlsRyXO5MUf_4cSSwRtsF4VIW8qqjL4fFn2XPbpFz8hTdy2hYkZwvkfU37yc6k8xb3Ki0XmSrJbFkwbWGnidJ-prbctTmA9_jGJSI0S7c2_AhMN_Yc5V6uAGzum_6LMv0_QatGUCOzthQV7hFeZJtZZFQukgEE-cfb78hgBWkwK0Qss3NVTfDCjwAtmnhiQPTPZAbSKaFaRaY50sCZ7sGeqhaOdXbw9RvJG7we6DcUYTJCs8qzE4p8QuH6yceOzm-vJtwyIyNNmfYTB29slaVTEunpxKOwaBVMCgkEGHAwAtbWmzWeaAQ6ivcvZgHX0dJ-39fggb6JLg
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: User
+    meta:
+      id: fld_9b8ed300a66443b2880c67689f76409e
+      created: 1774682820053
+      modified: 1774683364455
+      sortKey: -1774682820053
+      description: ""
+    children:
+      - url: http://localhost:8080/api/register
+        name: Register user
+        meta:
+          id: req_9504da1313d841c3b1270e329f263256
+          created: 1774683347278
+          modified: 1774725075552
+          isPrivate: false
+          description: ""
+          sortKey: -1774683347278
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+            	"name": "test",
+              "email": "yousseefff@livee.fr",                                                                      
+              "password": "password"
+            }    
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/login
+        name: login
+        meta:
+          id: req_da9014edbe864b09ac5090304ad828ed
+          created: 1774688276071
+          modified: 1774725871304
+          isPrivate: false
+          description: ""
+          sortKey: -1774688276071
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+              "email": "yousseff-test@live.fr",                                                                      
+              "password": "password"
+            }    
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/users/me
+        name: me
+        meta:
+          id: req_55bb792ad1a749fdaefe1155ecd53d60
+          created: 1774689341178
+          modified: 1774725233293
+          isPrivate: false
+          description: ""
+          sortKey: -1774689341178
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3MjUxMzEsImV4cCI6MTc3NDcyODczMSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZWZmZkBsaXZlZS5mciJ9.vrNqd_xzVRx03JTNQLD215d3gM2NuLdVX0bk38lG9wlUqA7J6R92p8y7K4e48YdwBdtp5yJavE1XJIJEBTJ74rjBY3krgFhU0ap9KAuMpwihTs0-Mb0Z3CMmS5p04ms3MgfdnFRfE2fYUNhlrain3ngGsdmRJzLlJoT1myaHJyFGxo7DXcESM_ySoe0JFTH-ixB_N139BqkCj3FN3knCQ-3VvMwDS94of_yMn8HTd1pUWJ0ASgEk2bQF2EEnbOtr33SXYWjNfwdp3YhHi3YgR8ZDI5taLypqGSZQot1ST5NN5rdPE1JYgJi-rgeMnLf1Vuf4XX6C7Jc_EVBqQ2A0fQ
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/users/me
+        name: Put me
+        meta:
+          id: req_dfbb6ff5a853445cb4cc482c14299c60
+          created: 1774702771906
+          modified: 1774725883747
+          isPrivate: false
+          description: ""
+          sortKey: -1774688808624.5
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"name": "Lyon imcoming",
+            	"email": "yousseff-test@live.fr"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: bearer
+          token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzQ3MjU4NzIsImV4cCI6MTc3NDcyOTQ3Miwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoieW91c3NlZmYtdGVzdEBsaXZlLmZyIn0.vZjyxj18q_8nbMTmqZzL7tfnxuizpw-GCPbjzGPbtO6X1YHRHuptq1_gMbGFuhCwufkz787kk3MVMCBgogA1SJ_7FAFf5lTLs5vxJTKcLYwcXRNlOMkwUSqY831oRF09ImJhlqCImiSQsprVF6RvEHnx5Mb3uKLoouXEL14DMBjca0XJwz9qqAhhusLEY-TRl1tAT22X024H0c4Ee7trwVxWO3mKNe0vtJZx-S-0kI4dmhiHWg6qnOm8_HjisyqSWcI9yYGb4JWgV6C1wox6roF8-sUgYbAjYtTV27Kzq7KQW_NFrB3s9TXoesxZpVokV_kydF3mf1IH23W4HP-U4A
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f8ebd166594f57f4e52156d73a3dc7effe6382ba
+    created: 1774682779875
+    modified: 1774682779875
+environments:
+  name: Base Environment
+  meta:
+    id: env_f8ebd166594f57f4e52156d73a3dc7effe6382ba
+    created: 1774682779873
+    modified: 1774682779873
+    isPrivate: false
