@@ -30,4 +30,13 @@ describe('bookingHttpClient', () => {
         expect(api.post).toHaveBeenCalledWith('/api/bookings/book',
             { sessionId: 'session-test-id' });
     });
+
+    it('cancel calls delete endpoint with booking id', async () => {
+        api.delete.mockResolvedValue({ data: null });
+
+        const result = await bookingHttpClient.cancel('booking-123');
+
+        expect(api.delete).toHaveBeenCalledWith('/api/bookings/cancel/booking-123');
+        expect(result).toBeNull();
+    });
 });
